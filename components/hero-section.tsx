@@ -4,17 +4,22 @@ export function HeroSection() {
       id="hero"
       className="relative flex items-center min-h-screen overflow-hidden"
     >
+      {/* Background Video */}
       <video
         className="absolute inset-0 w-full h-full object-cover"
         autoPlay
         muted
         loop
         playsInline
-        poster="/wujood.jpg"
+        poster="wujood.jpg"   // relative path for GitHub Pages
       >
-        <source src="/VideoWujood.mp4" type="video/mp4" />
+        <source 
+          src="VideoWujood.mp4"   // relative path for GitHub Pages
+          type="video/mp4" 
+        />
       </video>
 
+      {/* Overlay */}
       <div className="absolute inset-0 bg-black/20" />
 
       {/* Content */}
@@ -43,10 +48,12 @@ export function HeroSection() {
               <p className="font-bold text-[#f9f081] text-3xl">3</p>
               <p className="text-white text-xl">Oncology centers</p>
             </div>
+
             <div className="bg-white/10 backdrop-blur p-4 rounded-lg text-center flex flex-col items-center justify-center gap-2 min-h-[150px]">
               <p className="font-bold text-[#4eb2d0] text-2xl">Co-Developed</p>
               <p className="text-white text-lg">With Survivors</p>
             </div>
+
             <div className="bg-white/10 backdrop-blur p-4 rounded-lg text-center flex flex-col items-center justify-center gap-2 min-h-[150px]">
               <p className="font-bold text-[#c060a5] text-3xl">Pilot Phase</p>
               <p className="text-white text-sm">Launching in 2026</p>
