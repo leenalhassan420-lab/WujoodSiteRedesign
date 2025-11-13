@@ -11,6 +11,8 @@ export function HeroSection() {
         muted
         loop
         playsInline
+        preload="auto"
+        onLoadedMetadata={(e) => e.currentTarget.play()} 
         poster="wujood.jpg"   // relative path for GitHub Pages
       >
         <source 
